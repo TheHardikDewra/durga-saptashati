@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive guide to Sri Durga Saptashati (Devi Mahatmyam) - 700 verses, 13 chapters, 3 charitas. Full paath with Sanskrit, IAST, meaning, and all angas.">
+  <meta name="theme-color" content="#0f0f0f">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta property="og:title" content="Sri Durga Saptashati - Devi Mahatmyam">
+  <meta property="og:description" content="700 verses, 13 chapters, full paath of the Divine Mother. Interactive site with Sanskrit, IAST, and all angas.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://durga-saptashati.vercel.app/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sri Durga Saptashati">
+  <meta name="twitter:description" content="700 verses, 13 chapters - interactive paath companion">
+  <title>Sri Durga Saptashati - Devi Mahatmyam</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Tiro+Devanagari+Sanskrit&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-title">
+      <h1 class="title-sanskrit">श्री दुर्गा सप्तशती</h1>
+      <p class="title-english">Sri Durga Saptashati - Devi Mahatmyam</p>
+      <div class="header-controls">
+        <button class="theme-btn" id="theme-toggle" aria-label="Toggle theme">System</button>
+        <div class="font-controls" id="font-controls"></div>
+      </div>
+    </div>
+    <nav class="nav-tabs" role="tablist">
+      <a href="#home" class="nav-tab active" role="tab" data-view="home">Home</a>
+      <a href="#charitas" class="nav-tab" role="tab" data-view="charitas">Charitas</a>
+      <a href="#chapters" class="nav-tab" role="tab" data-view="chapters">Chapters</a>
+      <a href="#angas" class="nav-tab" role="tab" data-view="angas">Angas</a>
+      <a href="#paath" class="nav-tab" role="tab" data-view="paath">Paath</a>
+      <a href="#about" class="nav-tab" role="tab" data-view="about">About</a>
+    </nav>
+  </header>
+
+  <main id="app">
+
+    <!-- Home View -->
+    <section id="view-home" class="view">
+      <div class="welcome-section">
+        <p class="welcome-text">Sri Durga Saptashati (also called Devi Mahatmyam or Chandi Path) is the most revered text of the Shakta tradition - 700 verses across 13 chapters from the Markandeya Purana. It tells of the Divine Mother slaying the demons Madhu-Kaitabha, Mahishasura, and Shumbha-Nishumbha in three episodes (charitas), presided over by Mahakali, Mahalakshmi, and Mahasaraswati. Traditionally chanted during Navaratri, daily sadhana, and at moments when the devotee turns to the Mother for refuge.</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-number">13</span>
+          <span class="stat-label">Chapters</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">700</span>
+          <span class="stat-label">Mantras</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Charitas</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" id="stat-completed">0</span>
+          <span class="stat-label">Recited</span>
+        </div>
+      </div>
+
+      <div class="sadhana-section">
+        <h2 class="section-title">Sadhana Tracker</h2>
+        <div class="sadhana-card">
+          <div class="sadhana-stats">
+            <div class="sadhana-stat">
+              <span class="sadhana-stat-number" id="sadhana-total">0</span>
+              <span class="sadhana-stat-label">Total Paaths</span>
+            </div>
+            <div class="sadhana-stat">
+              <span class="sadhana-stat-number" id="sadhana-streak">0</span>
+              <span class="sadhana-stat-label">Day Streak</span>
+            </div>
+            <div class="sadhana-stat">
+              <span class="sadhana-stat-number" id="sadhana-month">0</span>
+              <span class="sadhana-stat-label">This Month</span>
+            </div>
+          </div>
+          <div class="sadhana-actions">
+            <button class="sadhana-log-btn" id="sadhana-log">Log Recitation</button>
+            <div class="sadhana-last" id="sadhana-last"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navarna-section">
+        <h2 class="section-title">Navarna Mantra - The Heart</h2>
+        <div class="navarna-card">
+          <div class="navarna-sanskrit">ॐ ऐं ह्रीं क्लीं चामुण्डायै विच्चे</div>
+          <div class="navarna-iast">oṃ aiṃ hrīṃ klīṃ cāmuṇḍāyai vicce</div>
+          <div class="navarna-meaning">The supreme nine-syllable mantra of the Saptashati. Recited 108 times before and after the paath, and at the junction of each chapter.</div>
+          <div class="navarna-breakdown" id="navarna-breakdown"></div>
+        </div>
+      </div>
+
+      <div class="audio-section">
+        <h2 class="section-title">Chanting Audio</h2>
+        <div class="youtube-wrapper">
+          <iframe id="home-youtube"
+                  src="https://www.youtube-nocookie.com/embed/IVrC7uvVICQ?rel=0"
+                  title="Durga Saptashati Parayanam - VDS Bangalore Ashram"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="audio-links">
+          <a href="https://youtu.be/IVrC7uvVICQ" target="_blank" rel="noopener" class="audio-link">
+            <span class="audio-title">Durga Saptashati Parayanam - 02 Jan 2026</span>
+            <span class="audio-artist">Vaidic Dharma Sansthan, Bangalore Ashram</span>
+          </a>
+          <a href="https://www.youtube.com/playlist?list=PLAPrVB8wngPncDkh-98XD_HT21hKENqEX" target="_blank" rel="noopener" class="audio-link">
+            <span class="audio-title">Durga Saptashati Chants - Full Playlist</span>
+            <span class="audio-artist">Multiple sessions and chapter recordings</span>
+          </a>
+          <a href="https://www.youtube.com/watch?v=2SdjEYSww-Q" target="_blank" rel="noopener" class="audio-link">
+            <span class="audio-title">How to Benefit from Durga Saptashati</span>
+            <span class="audio-artist">Om Swami ji's discourse</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="significance-section">
+        <h2>Why Durga Saptashati Is Chanted</h2>
+        <p>The Saptashati is not a story about Devi - it <em>is</em> Devi. Each verse is a mantra; the entire text is treated as a single mahamantra. Tradition holds that one full, single-pointed recitation is equivalent to a great yajna.</p>
+        <ul>
+          <li>Removes obstacles, debt, illness, and fear of enemies</li>
+          <li>Bestows the grace of all three forms of Devi - Mahakali, Mahalakshmi, Mahasaraswati</li>
+          <li>The only text in the Hindu corpus where the Mother declares herself the Supreme</li>
+          <li>Central to Navaratri, Durga Puja, Chandi Homa, and daily Shakta sadhana</li>
+          <li>Contains four supreme hymns: Brahma-Stuti, Shakradi-Stuti, Ya Devi Sarva Bhuteshu, and Narayani Stuti</li>
+        </ul>
+      </div>
+
+      <div class="quick-actions">
+        <a href="#charitas" class="action-btn">Explore Charitas</a>
+        <a href="#chapters" class="action-btn">Read Chapters</a>
+        <a href="#paath" class="action-btn">Full Paath</a>
+      </div>
+    </section>
+
+    <!-- Charitas View -->
+    <section id="view-charitas" class="view" hidden>
+      <div class="section-intro">
+        <h2>The Three Charitas</h2>
+        <p>The Saptashati is divided into three episodes (charitas), each presided over by one of the three supreme forms of Devi - corresponding to the three gunas (tamas, rajas, sattva) and the three cosmic functions (destruction of ignorance, sustenance of action, creation of knowledge).</p>
+      </div>
+      <div class="charitas-grid" id="charitas-grid"></div>
+    </section>
+
+    <!-- Chapters View -->
+    <section id="view-chapters" class="view" hidden>
+      <div class="section-intro">
+        <h2>The 13 Chapters</h2>
+        <p>The full text in order. Each chapter has its full Devanagari text, IAST transliteration, summary of the narrative, presiding deity, and key hymns. Click any chapter to expand.</p>
+      </div>
+      <div class="chapters-stats">
+        <div id="chapters-counter">13 chapters</div>
+        <div class="progress-pill" id="chapters-progress">0 / 13 recited</div>
+      </div>
+      <div class="chapters-list" id="chapters-list"></div>
+    </section>
+
+    <!-- Angas View -->
+    <section id="view-angas" class="view" hidden>
+      <div class="section-intro">
+        <h2>The Angas - Auxiliary Texts</h2>
+        <p>Traditional paath includes auxiliary texts before and after the 13 chapters. The Trayanga method (Argala + Keelaka + Kavacha) is the minimum; the full Navangam adds Saptashloki, Dhyana, Navarna mantra, Devi Suktam, Kunjika, and Aparadha Kshamapana.</p>
+      </div>
+      <div class="anga-phases">
+        <h3 class="phase-heading">Pre-Paath (Purvanga)</h3>
+        <div class="angas-list" id="angas-pre-list"></div>
+        <h3 class="phase-heading">Post-Paath (Uttaranga)</h3>
+        <div class="angas-list" id="angas-post-list"></div>
+      </div>
+    </section>
+
+    <!-- Paath View -->
+    <section id="view-paath" class="view" hidden>
+      <div class="section-intro">
+        <h2>Full Paath - Traditional Order</h2>
+        <p>The complete Navangam paath in canonical order. Mark each component as recited as you progress. The full paath takes approximately 3-4 hours when recited at a steady pace; for daily practice, many devotees split the chapters across days while always reciting the Trayanga and Devi Suktam.</p>
+      </div>
+      <div class="paath-stats">
+        <div class="progress-pill" id="paath-progress">0 / 0 complete</div>
+        <button class="data-btn" id="paath-reset">Reset Progress</button>
+      </div>
+      <div class="paath-list" id="paath-list"></div>
+    </section>
+
+    <!-- About View -->
+    <section id="view-about" class="view" hidden>
+      <div class="about-section">
+        <h2>What is Durga Saptashati</h2>
+        <p>Sri Durga Saptashati (श्री दुर्गा सप्तशती) - also called Devi Mahatmyam (देवीमाहात्म्यम्) and Chandi Path - is the heart of Shakta scripture. It appears as chapters 81-93 of the Markandeya Purana. Composed between the 4th and 6th centuries CE, it is the first text in the Hindu canon where the Goddess is declared as the supreme reality - not consort, not aspect, but the One from whom all forms emerge.</p>
+        <ul>
+          <li><strong>Source:</strong> Markandeya Purana, chapters 81-93</li>
+          <li><strong>Total chapters:</strong> 13 (arranged as 1 + 3 + 9)</li>
+          <li><strong>Total mantras:</strong> 700 (518 full verses + half/khanda/uvacha mantras)</li>
+          <li><strong>Three episodes:</strong> Prathama (Mahakali), Madhyama (Mahalakshmi), Uttama (Mahasaraswati)</li>
+          <li><strong>Frame story:</strong> Sage Markandeya tells it to Savarni Manu; within that, sage Medhas teaches it to King Suratha and the merchant Samadhi</li>
+        </ul>
+      </div>
+
+      <div class="about-section">
+        <h2>The 700 Mantras</h2>
+        <p>The text is called Saptashati - "containing seven hundreds" - because it has 700 mantras. But these are not all complete verses. The breakdown:</p>
+        <div class="mantra-breakdown-grid">
+          <div class="breakdown-item">
+            <span class="breakdown-num">537</span>
+            <span class="breakdown-label">Sloka mantras (full verses)</span>
+          </div>
+          <div class="breakdown-item">
+            <span class="breakdown-num">38</span>
+            <span class="breakdown-label">Ardha-sloka mantras (half verses)</span>
+          </div>
+          <div class="breakdown-item">
+            <span class="breakdown-num">66</span>
+            <span class="breakdown-label">Khanda mantras (parts of verses)</span>
+          </div>
+          <div class="breakdown-item">
+            <span class="breakdown-num">57</span>
+            <span class="breakdown-label">Uvacha mantras (narrator markers)</span>
+          </div>
+          <div class="breakdown-item">
+            <span class="breakdown-num">2</span>
+            <span class="breakdown-label">Punarukta mantras (repetitions)</span>
+          </div>
+          <div class="breakdown-item breakdown-total">
+            <span class="breakdown-num">700</span>
+            <span class="breakdown-label">Total mantras</span>
+          </div>
+        </div>
+        <p class="breakdown-note">Each is recited as a complete mantra in its own right. The entire text is also treated as a single great mantra - the reason Saptashati paath is considered one of the most efficacious sadhanas in the Shakta tradition.</p>
+      </div>
+
+      <div class="about-section">
+        <h2>Trayanga vs Navangam</h2>
+        <p>Two traditional methods for the auxiliary texts (angas) chanted before the main 13 chapters:</p>
+        <div class="method-grid">
+          <div class="method-card">
+            <h3>Trayanga - 3 angas</h3>
+            <p>The minimum traditional preparation. Recite three stotrams in this order:</p>
+            <ol>
+              <li>Argala Stotram (27 verses) - removes obstacles</li>
+              <li>Keelaka Stotram (16 verses) - unlocks the mantras</li>
+              <li>Devi Kavacham (61 verses) - protective armor</li>
+            </ol>
+            <p>Followed by the Navarna mantra, then the chapters.</p>
+          </div>
+          <div class="method-card">
+            <h3>Navangam - 9 angas</h3>
+            <p>The complete preparation including:</p>
+            <ol>
+              <li>Devi Nyasa - placement of Devi in the body</li>
+              <li>Devi Avahana - invocation</li>
+              <li>Devi Namani - the names</li>
+              <li>Argala Stotram</li>
+              <li>Keelaka Stotram</li>
+              <li>Devi Hrudaya - heart of Devi</li>
+              <li>Dhala - shield</li>
+              <li>Devi Dhyana - meditation verse</li>
+              <li>Devi Kavacham</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-section">
+        <h2>Traditional Paath Order</h2>
+        <ol class="practice-flow-list">
+          <li><strong>Sankalpa</strong><span>Statement of intent - date, place, purpose, deity, fruit</span></li>
+          <li><strong>Saptashloki Durga</strong><span>Seven verses condensing the entire text</span></li>
+          <li><strong>Chandika Dhyana</strong><span>Meditation verse on Devi Chandika</span></li>
+          <li><strong>Navarna Mantra</strong><span>108 recitations of the nine-syllable mantra</span></li>
+          <li><strong>Trayanga</strong><span>Argala, Keelaka, Kavacha</span></li>
+          <li><strong>Ratri Suktam</strong><span>Vedic hymn to the Night-goddess (Rig Veda)</span></li>
+          <li><strong>13 Chapters</strong><span>The main Saptashati - 700 mantras</span></li>
+          <li><strong>Devi Suktam</strong><span>The Vagambhrini Suktam (Rig Veda 10.125)</span></li>
+          <li><strong>Siddha Kunjika</strong><span>The master-key stotram</span></li>
+          <li><strong>Aparadha Kshamapana</strong><span>Forgiveness for any errors</span></li>
+          <li><strong>Pushpanjali</strong><span>Offering of flowers, conclusion</span></li>
+        </ol>
+        <div class="practice-flow-note">For daily practice, many devotees split the chapters across days. The most important rule: never interrupt the Madhyama Charita (chapters 2-4) mid-recitation.</div>
+      </div>
+
+      <div class="about-section">
+        <h2>The Frame Story</h2>
+        <p>The Saptashati is told within a frame:</p>
+        <div class="frame-story-card">
+          <p><strong>King Suratha</strong>, dispossessed by his ministers, and <strong>merchant Samadhi</strong>, abandoned by his wife and sons, meet in the forest hermitage of <strong>Sage Medhas</strong>. Both are bewildered: why does attachment still bind them to those who betrayed them? Medhas explains that this is the work of <strong>Mahamaya</strong> - and proceeds to narrate the entire Devi Mahatmyam to teach them the supremacy of the Goddess.</p>
+          <p>This story sits within a larger frame: <strong>Sage Markandeya</strong> tells it to <strong>Krushtuki</strong>, who tells it to <strong>Savarni Manu</strong> (the eighth Manu of this kalpa). At the end, Suratha receives the boon of becoming Savarni Manu in his next life, and Samadhi receives the boon of liberation through self-knowledge.</p>
+        </div>
+      </div>
+
+      <div class="about-section">
+        <h2>The Four Great Hymns</h2>
+        <div class="hymns-grid">
+          <div class="hymn-card">
+            <div class="hymn-name">Brahma-Stuti</div>
+            <div class="hymn-location">Chapter 1</div>
+            <div class="hymn-desc">Brahma's praise of Yoganidra (Mahamaya) - the very first hymn to Devi as the supreme cause.</div>
+          </div>
+          <div class="hymn-card">
+            <div class="hymn-name">Shakradi-Stuti</div>
+            <div class="hymn-location">Chapter 4</div>
+            <div class="hymn-desc">Indra and the gods praise Devi after the slaying of Mahishasura - "Devi who is the cause of all causes".</div>
+          </div>
+          <div class="hymn-card">
+            <div class="hymn-name">Ya Devi Sarva Bhuteshu</div>
+            <div class="hymn-location">Chapter 5</div>
+            <div class="hymn-desc">"To the Devi who dwells in all beings as consciousness, intelligence, sleep, hunger..." - the most chanted hymn from the Saptashati.</div>
+          </div>
+          <div class="hymn-card">
+            <div class="hymn-name">Narayani Stuti</div>
+            <div class="hymn-location">Chapter 11</div>
+            <div class="hymn-desc">The grandest hymn - Devi as Narayani, refuge of all, cause of creation-preservation-destruction.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-section">
+        <h2>How to Chant - Etiquette</h2>
+        <ul>
+          <li>Bathe and wear clean clothes before chanting. Sit on a clean asana facing east or north.</li>
+          <li>Begin with a short prayer to Ganesha and your Guru. End with Aparadha Kshamapana and Om Shanti.</li>
+          <li>Maintain ekagrata (single-pointed focus). The Saptashati's power is proportional to the chanter's concentration.</li>
+          <li>Never interrupt the Madhyama Charita (chapters 2-4) mid-recitation. If interrupted, restart it.</li>
+          <li>The Navarna mantra is traditionally chanted at the junction of each chapter (chapter-sandhi).</li>
+          <li>If the full paath is not possible, even the Saptashloki Durga or Siddha Kunjika alone confer the merit of the full text.</li>
+          <li>Women may chant Durga Saptashati at any time. Some traditions advise mental recitation during menstruation; chanting is never barred.</li>
+        </ul>
+      </div>
+
+      <div class="about-section">
+        <h2>Sister Projects</h2>
+        <div class="sister-grid">
+          <a href="https://lalita-sahasranama.vercel.app" target="_blank" rel="noopener" class="sister-card">
+            <div class="sister-name">Sri Lalita Sahasranama</div>
+            <div class="sister-desc">1000 names of the Divine Mother Lalita Tripurasundari - with detailed commentaries from Om Swami ji's community.</div>
+          </a>
+          <a href="https://shri-rudram.vercel.app" target="_blank" rel="noopener" class="sister-card">
+            <div class="sister-name">Sri Rudram</div>
+            <div class="sister-desc">Rudra Prashna from Krishna Yajurveda - 22 anuvakas with Ghanapathi chanting, Namakam and Chamakam.</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="about-section">
+        <h2>Credits & Sources</h2>
+        <div class="credits-card">
+          <p><strong>Sanskrit text:</strong> <a href="https://sanskritdocuments.org/doc_devii/durga700.html" target="_blank" rel="noopener">Sanskrit Documents (Durga 700)</a> - transliterated by K. Shankaran, Kirk Wortman, Dhruba Chakroborty, Ahto Jarve; proofread by Sunder Hattangadi and Kirk Wortman.</p>
+          <p><strong>Siddha Kunjika:</strong> <a href="https://sanskritdocuments.org/doc_devii/siddhakunjikaa.html" target="_blank" rel="noopener">Sanskrit Documents</a> - source: Rudrayamala Tantra / Damaratantra.</p>
+          <p><strong>Audio:</strong> <a href="https://www.youtube.com/@VaidicDharmaSansthanOmSwami" target="_blank" rel="noopener">Vaidic Dharma Sansthan, Bangalore Ashram</a> - regular Durga Saptashati Parayanam events.</p>
+          <p><strong>Cross-verification:</strong> Gita Press Gorakhpur edition, Vaidika Vignanam.</p>
+          <p>All Devanagari and IAST were generated programmatically from the Sanskrit Documents ITRANS source via the indic-transliteration library. Any error is mine; any grace is the Mother's.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-dedication">A devotional offering to Maa Durga - the Divine Mother</p>
+    <p class="footer-source">Text source: Sanskrit Documents | Audio: Vaidic Dharma Sansthan</p>
+    <div class="data-controls">
+      <button class="data-btn" id="export-data">Export Progress</button>
+      <label class="data-btn import-label">
+        Import Progress
+        <input type="file" id="import-data" accept=".json" hidden>
+      </label>
+    </div>
+    <p class="footer-repo"><a href="https://github.com/TheHardikDewra/durga-saptashati" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+  <script src="data.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js').catch(function () {});
+    });
+  }
+  </script>
+</body>
+</html>

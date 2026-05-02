@@ -1,0 +1,144 @@
+% Text title            : siddhaku.njikAstotram
+% File name             : siddhakunjikaa.itx
+% Category              : devii, durgA, stotra, devI
+% Location              : doc\_devii
+% Author                : Traditional
+% Proofread by          : Ravin Bhalekar ravibhalekar at hotmail.com
+% Description-comments  : Combined to cover variations
+% Source                : rUdrayAmale\_gaurIta.ntra or DAmaratantre
+% Latest update         : June 29, 2004, December 12, 2015
+% Send corrections to   : sanskrit at cheerful dot c om
+%
+% This text is prepared by volunteers and is to be used for personal study 
+% and research. The file is not to be copied or reposted for promotion of 
+% any website or individuals or for commercial purpose without permission. 
+% Please help to maintain respect for volunteer spirit.
+%
+\documentstyle[11pt,multicol,itrans]{article}
+#include=ijag.inc
+#endwordvowel=.h
+\portraitwide
+\parindent=100pt                
+\let\usedvng=\Largedvng      % for 1 column     
+\pagenumbering{itrans} 
+\def\engtitle#1{\hrule\medskip\centerline{\LARGE #1}}
+\def\itxtitle#1{\medskip\centerline{\LARGEdvng #1}\medskip\hrule}
+\def\endtitles{\medskip\obeyspaceslines}
+%%
+\begin{document}
+\engtitle{.. ku~njikAstotram or siddhaku~njikAstotram ..}##
+\itxtitle{.. ku~njikAstotram athavA siddhaku~njikAstotram ..}##\endtitles ##
+
+shrI gaNeshAya namaH |
+OM asya shrIku~njikAstotramantrasya sadAshiva R^iShiH, anuShTup ChandaH,
+shrItriguNAtmikA devatA, OM aiM bIjaM, OM hrIM shaktiH, OM klIM kIlakam,
+mama sarvAbhIShTasiddhyarthe jape viniyogaH |
+
+shiva uvAcha |
+shR^iNu devi pravakShyAmi ku~njikAstotramuttamam |
+yena mantraprabhAveNa chaNDIjApaH shubho bhavet || 1||
+na kavachaM nArgalAstotraM kIlakaM na rahasyakam |
+na sUktaM nApi dhyAnaM cha na nyAso na cha vArchanam || 2||
+ku~njikApAThamAtreNa durgApAThaphalaM labhet |
+ati guhyataraM devi devAnAmapi durlabham || 3||
+gopanIyaM prayatnena svayoniriva pArvati |
+mAraNaM mohanaM vashyaM stambhanochchATanAdikam |
+pAThamAtreNa sa.nsiddhyet ku~njikAstotramuttamam || 4||
+atha mantraH |
+OM aiM hrIM klIM chAmuNDAyai vichche |
+OM glauM huM klIM jUM saH jvAlaya jvAlaya jvala jvala prajvala prajvala
+aiM hrIM klIM chAmuNDAyai vichche jvala haM saM laM kShaM phaT svAhA || 5||
+iti ma.ntraH |
+##var ## shrU.N shrU.N shrU.N shaM phaT aiM hrIM klIM jvala ujjvala prajvala
+hrIM hrIM klIM srAvaya srAvaya shApaM nAshaya nAshaya 
+shrIM shrIM shrIM jUM saH srAvaya Adaya svAhA |
+OM shlIM hU.N klIM glAM jUM saH jvala ujjvala mantraM
+prajvala haM saM laM kShaM phaT svAhA |
+
+namaste rudrarUpiNyai namaste madhumardini |
+namaH kaiTabhahAriNyai namaste mahiShArdini || 6||
+namaste shumbhahantryai cha nishumbhAsuraghAtini |
+jAgrataM hi mahAdevi japaM siddhaM kurUShva me || 7||
+ai~NkArI sR^iShTirUpAyai hrI~NkArI pratipAlikA |
+klI~NkArI kAmarUpiNyai bIjarUpe namo.astu te || 8||
+chAmuNDA chaNDaghAtI cha yaikArI varadAyinI |
+vichche chAbhayadA nityaM namaste mantrarUpiNi || 9||
+dhAM dhIM dhUM dhUrjaTeH patnI vAM vIM vUM vAgadhIshvarI |
+krAM krIM krUM ku~njikA devi shAM shIM shUM me shubhaM kuru || 10||
+##var## kAlikA devi
+huM huM hu~NkArarUpiNyai jaM jaM jaM jambhanAdinI |
+## var ## jrAM jrIM jrUM bhAlanAdinI |
+bhrAM bhrIM bhrUM bhairavI bhadre bhavAnyai te namo namaH || 11||
+aM kaM chaM TaM taM paM yaM shaM vIM duM aiM vIM haM kSham |
+dhijAgram dhijAgraM troTaya troTaya dIptaM kuru kuru svAhA || 12||
+
+## var ## OM aM kaM chaM TaM taM paM sAM vidurAM vidurAM vimardaya vimardaya
+hrIM kShAM kShIM srIM jIvaya jIvaya troTaya troTaya 
+jambhaya jaMbhaya dIpaya dIpaya mochaya mochaya
+hUM phaT jrAM vauShaT aiM hRIM klIM ra~njaya ra~njaya 
+sa~njaya sa~njaya gu~njaya gu~njaya bandhaya bandhaya
+bhrAM bhrIM bhrUM bhairavI bhadre sa~Nkucha sa~Nkucha
+troTaya troTaya mlIM svAhA || 12||
+
+pAM pIM pUM pArvatI pUrNA khAM khIM khUM khecharI tathA |
+mlAM mlIM mlUM mUlavistIrNA ku~njikAstotra hetave |
+sAM sIM sUM saptashatI devyA ma.ntrasiddhiM kurUShva me || 13||
+ku~njikAyai namo namaH |
+idaM tu ku~njikAstotraM mantrajAgartihetave |
+abhakte naiva dAtavyaM gopitaM rakSha pArvati || 14||
+yastu ku~njikayA devi hInAM saptashatIM paThet |
+na tasya jAyate siddhiraraNye rodanaM yathA || 15||
+| iti shrIrudrayAmale gaurItantre shivapArvatIsa.nvAde
+ku~njikAstotraM sampUrNam |
+##var ##
+iti shrI DAmaratantre IshvarapArvatIsaMvAde ku~njikAstotraM sampUrNam |
+##
+Proofread by Ravin Bhalekar ravibhalekar@hotmail.com
+
+Verses have variations in different books as far as text and
+verse numbers are concerned.
+The devotee is urged to recite the stotra with devotion and
+pray Devi to receive the offering well and forgive for any
+unintentional errors caused by variations found in literature.
+
+\medskip\hrule\medskip
+Comments by Kumar Sundrarajan Rajendra
+\medskip
+Q: What is the significance of the Siddha Kunjika Stotram ?
+A: This is the essence of the Chandi, the Navarna Mantra, the constant reminder
+that change She will, change She must, because change is Her intrinsic Nature.
+
+Q: What is the meaning of ‘Kunjika’ in the Siddha Kunjika Stotram?
+A: Kunjika literally means “something overgrown or hidden by growth or
+growing things.” Siddha means perfection. Stotram is the song.
+The Song of Perfection which is no longer hidden because of growth.
+That is, our spiritual growth and understanding of the Chandi exposes
+the hidden meanings of the bija mantras in the Song.
+
+Q: When to recite kunjika stotatram ?
+A: Recite especially when one does not have time or do not want to chant
+the entire long Durga SaptaShati/Chandi Path. The Siddha
+Kunjika Stotra itself says at the begining that no argala or kilak stotra and
+other related matters is needed if one recites Siddha Kunjika Stotra. Kunjika,
+there is Devi in the form of Chamunda. Not only it works for Navaratri , it is
+to be chanted at the junction when Ashtami leaves and enters Navami . 24 mins
+before Ashtami ends to 24 mins after navami starts, is the time when Devi takes
+the form of Chamunda and had got to be chanted no matter the count to exhaust 48
+mins .
+
+Q: How to Count 48 minutes
+A: Each Tithi lasts for 24 hours . If for example, the Navami starts at 21.30 pm
+in the night then you should start at 21.06 (which is Ashtami ) and
+continue untill 21.54 pm, that 48 mins is called Sandhi kShaN or period
+of transit, when Devi in the form of Chamunda is killing Chanda
+and Munda (the demons). That is regarded as the most auspiscious
+time of Navaratri as Devi is ready to give boon after Sandhi kShaN .
+
+
+\medskip\hrule\obeylines
+
+Please send corrections to sanskrit at cheerful dot c om
+Last updated \today
+https://sanskritdocuments.org
+
+\end{document}
