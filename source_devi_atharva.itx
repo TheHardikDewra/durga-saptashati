@@ -1,0 +1,148 @@
+% Text title            : devyatharvashIrSham evaM devyupanishhat
+% File name             : deviiatharva.itx
+% Category              : atharvashIrSha, devii, pArvatI, devI, upanishhat
+% Location              : doc\_devii
+% Author                : Traditional
+% Proofread by          : Ravin Bhalekar ravibhalekar at hotmail.com, PSA Easwaran
+% Latest update         : June 15, 2004, Febraury 20, 2016
+% Send corrections to   : sanskrit at cheerful dot c om
+%
+% This text is prepared by volunteers and is to be used for personal study 
+% and research. The file is not to be copied or reposted for promotion of 
+% any website or individuals or for commercial purpose without permission. 
+% Please help to maintain respect for volunteer spirit.
+%
+\documentstyle[11pt,multicol,itrans]{article}
+#include=ijag.inc
+#endwordvowel=.h
+\portraitwide
+\parindent=100pt                
+\let\usedvng=\Largedvng      % for 1 column     
+\pagenumbering{itrans} 
+\def\engtitle#1{\hrule\medskip\centerline{\LARGE #1}}
+\def\itxtitle#1{\medskip\centerline{\LARGEdvng #1}\medskip\hrule}
+\def\endtitles{\medskip\obeyspaceslines}
+%%
+\begin{document}
+\engtitle{.. Shri Devyatharvashirsham evaM Devyupanishat ..}##
+\itxtitle{.. shrIdevyatharvashIrShaM athavA devyupaniShat ..}##\endtitles ##
+OM bhadraM karNebhiH shR^iNuyAma devA bhadraM pashyemAkShabhiryajatrAH .
+sthiraira~NgaistuShTuvA.nsastanUbhirvyashema devahitaM yadAyuH .
+svasti na indro vR^iddhashravAH svasti naH pUShA vishvavedAH .
+svasti nastArkShyo ariShTanemiH svasti no bR^ihaspatirdadhAtu ..
+
+          OM shAntiH shAntiH shAntiH .
+
+shrI gaNeshAya namaH |
+OM sarve vai devA devImupatasthuH kAsi tvaM mahAdevIti || 1||
+sA.abravIdahaM brahmasvarUpiNI | mattaH prakR^itipuruShAtmakaM jagat |
+shUnyaM chAshUnyaM cha || 2||
+ahamAnandAnAnandau | ahaM vij~nAnAvij~nAne |
+ahaM brahmAbrahmaNI | dve brahmaNI veditavye | ##var just ##  veditavye
+iti chAtharvaNI shrutiH | ahaM pa~nchabhUtAni |
+ahaM pa~nchatanmAtrANi | ahamakhilaM jagat || 3||
+vedo.ahamavedo.aham | vidyAhamavidyAham |
+ajAhamanajAham | adhashchordhvaM cha tiryakchAham || 4||
+ahaM rudrebhirvasubhishcharAmi | ahamAdityairuta vishvadevaiH |
+ahaM mitrAvaruNAvubhau bibharmi | ahamindrAgnI ahamashvinAvubhau || 5||
+ahaM somaM tvaShTAraM pUShaNaM bhagaM dadhAmi |
+ahaM viShNumurukramaM brahmANamuta prajApatiM dadhAmi || 6||
+ahaM dadhAmi draviNaM haviShmate suprAvye yajamAnAya sunvate | ##var ## suvrate
+ahaM rAj~nI sa~NgamanI vasUnAM chikituShI prathamA yaj~niyAnAm | ##var ## rAShTrI
+ahaM suve pitaramasya mUrdhanmama yonirapsvantaH samudre |
+ya evaM veda | sa daivIM sampadamApnoti || 7||
+te devA abruvan |
+namo devyai mahAdevyai shivAyai satataM namaH |
+namaH prakR^ityai bhadrAyai niyatAH praNatAH sma tAm || 8||
+tAmagnivarNAM tapasA jvalantIM vairochanIM karmaphaleShu juShTAm |
+durgAM devIM sharaNaM prapadyAmahe.asurAnnAshayitryai te namaH || 9||
+devIM vAchamajanayanta devAstAM vishvarUpAH pashavo vadanti |
+sA no mandreShamUrjaM duhAnA dhenurvAgasmAnupa suShTutaitu || 10||
+kAlarAtrIM brahmastutAM vaiShNavIM skandamAtaram |
+sarasvatImaditiM dakShaduhitaraM namAmaH pAvanAM shivAm || 11||
+mahAlakShmyai cha vidmahe sarvashaktyai cha dhImahi |
+tanno devI prachodayAt || 12||
+aditirhyajaniShTa dakSha yA duhitA tava |
+tAM devA anvajAyanta bhadrA amR^itabandhavaH || 13||
+kAmo yoniH kamalA vajrapANirguhA hasA mAtarishvAbhramindraH | 
+punarguhA sakalA mAyayA cha purUchyaiShA vishvamAtAdividyom || 14||
+## var ## chApR^ithak kleshA vishvamAtAdividyAH ||
+eShA.a.atmashaktiH | eShA vishvamohinI | pAshA~NkushadhanurbANadharA |
+eShA shrImahAvidyA | ya evaM veda sa shokaM tarati || 15||
+namaste.stu bhagavati mAtarasmAnpAhi sarvataH || 16||
+saiShA vaiShNavyaShTau vasavaH | saiShaikAdasha rudrAH |
+saiShA dvAdashAdityAH | saiShA vishvedevAH somapA asomapAshcha |
+saiShA yAtudhAnA asurA rakShA.nsi pishAchA yakShA siddhAH |
+saiShA sattvarajastamA.nsi | saiShA brahmaviShNurudrarUpiNI |
+saiShA prajApatIndramanavaH |
+saiShA grahanakShatrajyotiHkalAkAShThAdivishvarUpiNI |
+## var ## saiShA grahanakShatrajyotIMShi | kalAkAShThAdivishvarUpiNI |
+tAmahaM praNaumi nityam | 
+pApApahAriNIM devIM bhuktimuktipradAyinIm |
+anantAM vijayAM shuddhAM sharaNyAM shivadAM shivAm || 17|| ##var ## sarvadAM shivAm
+viyadIkArasa.nyuktaM vItihotrasamanvitam |
+ardhendulasitaM devyA bIjaM sarvArthasAdhakam || 18||
+evamekAkSharaM mantraM yatayaH shuddhachetasaH | ## var ## evamekAkSharaM brahma
+dhyAyanti paramAnandamayA j~nAnAmburAshayaH || 19||
+vA~NmAyA brahmasUstasmAt ShaShThaM vaktrasamanvitam |
+## var ## brahmabhUstasmAt
+sUryo.avAmashrotrabindusa.nyuktAShTAttR^itIyakam |
+nArAyaNena saMmishro vAyushchAdhArayuktataH |
+vichche navArNako.arNaH syAnmahadAnandadAyakaH || 20||
+## var ## navArNakoNasya mahAnAnandadAyakaH
+hR^itpuNDarIkamadhyasthAM prAtaHsUryasamaprabhAm |
+pAshA~NkushadharAM saumyAM varadAbhayahastakAm |
+trinetrAM raktavasanAM bhaktakAmadughAM bhaje || 21|| ##var ## bhaktakAmaduhaM
+namAmi tvAM mahAdevIM mahAbhayavinAshinim |
+## var ## bhajAmi tvAM mahAdevi mahAbhayavinAshini |
+mahAdurgaprashamanIM mahAkAruNyarUpiNIm || 22|| ##var ## mahAdAridryashamanIM
+yasyAH svarUpaM brahmAdayo na jAnanti tasmAduchyate aj~neyA |
+yasyA anto na labhyate tasmAduchyate anantA |
+yasyA lakShyaM nopalakShyate tasmAduchyate alakShyA |
+yasyA jananaM nopalakShyate tasmAduchyate ajA |
+ekaiva sarvatra vartate tasmAduchyate ekA |
+ekaiva vishvarUpiNI tasmAduchyate naikA | ##var ## tasmAduchyate.anekA |
+ata evochyate Aj~neyAnantAlakShyAjaikA naiketi || 23||
+## var ## Aj~neyA.anantAlakShyAjaikAnekA
+mantrANAM mAtR^ikA devI shabdAnAM j~nAnarUpiNI |
+j~nAnAnAM chinmayAtItA shUnyAnAM shUnyasAkShiNI | ##var ## chinmayAnandA
+yasyAH parataraM nAsti saiShA durgA prakIrtitA || 24||
+tAM durgAM durgamAM devIM durAchAravighAtinIm |
+namAmi bhavabhIto.ahaM sa.nsArArNavatAriNIm || 25||
+
+idamatharvashIrShaM yo.adhIte sa pa~nchAtharvashIrShaphalamApnoti |
+idamatharvashIrShamaj~nAtvA yo.archAM sthApayati |
+shatalakShaM prajaptvA.api so.archAsiddhiM na vindati |
+##var ## nA.archAshuddhiM cha vindati
+shatamaShTottaraM chAsya purashcharyAvidhiH smR^itaH |
+dashavAraM paThedyastu sadyaH pApaiH pramuchyate |
+mahAdurgANi tarati mahAdevyAH prasAdataH || 26||
+sAyamadhIyAno divasakR^itaM pApaM nAshayati |
+prAtaradhIyAno rAtrikR^itaM pApaM nAshayati |
+sAyaM prAtaH prayu~njAno.apApo bhavati |
+nishIthe turIyasa.ndhyAyAM japtvA vAksiddhirbhavati |
+nUtanAyAM pratimAyAM japtvA devatAsA.nnidhyaM bhavati |
+prANapratiShThAyAM japtvA prANAnAM pratiShThA bhavati |
+bhaumAshvinyAM mahAdevIsa.nnidhau japtvA mahAmR^ityuM
+tarati sa mahAmR^ityuM tarati |
+ya evaM veda || ityupaniShat || 27||
+
+iti devyatharvashIrShaM sampUrNam ||
+
+OM bhadraM karNebhiH shR^iNuyAma devA bhadraM pashyemAkShabhiryajatrAH .
+sthiraira~NgaistuShTuvA.nsastanUbhirvyashema devahitaM yadAyuH .
+svasti na indro vR^iddhashravAH svasti naH pUShA vishvavedAH .
+svasti nastArkShyo ariShTanemiH svasti no bR^ihaspatirdadhAtu ..
+
+          OM shAntiH shAntiH shAntiH .
+
+##
+Proofread by Ravin Bhalekar ravibhalekar@hotmail.com, NA, PSA Easwaran
+
+\medskip\hrule\obeylines
+
+Please send corrections to sanskrit@cheerful.com
+Last updated \today
+https://sanskritdocuments.org
+
+\end{document}

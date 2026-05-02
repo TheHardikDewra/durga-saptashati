@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Interactive guide to Sri Durga Saptashati (Devi Mahatmyam) - 700 verses, 13 chapters, 3 charitas. Full paath with Sanskrit, IAST, meaning, and all angas.">
+  <meta name="description" content="Interactive guide to Sri Durga Saptashati (Devi Mahatmyam) - 700 verses, 13 chapters, 12 angas, Navadurga, Saptamatrika, Navarna mantra, full paath with chant mode.">
   <meta name="theme-color" content="#0f0f0f">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta property="og:title" content="Sri Durga Saptashati - Devi Mahatmyam">
-  <meta property="og:description" content="700 verses, 13 chapters, full paath of the Divine Mother. Interactive site with Sanskrit, IAST, and all angas.">
+  <meta property="og:description" content="700 verses, 13 chapters, full paath with all angas, Navadurga, Saptamatrika, hymns, chant mode.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://durga-saptashati.vercel.app/">
   <meta name="twitter:card" content="summary">
@@ -17,7 +17,7 @@
   <title>Sri Durga Saptashati - Devi Mahatmyam</title>
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=1">
+  <link rel="stylesheet" href="style.css?v=2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Tiro+Devanagari+Sanskrit&display=swap" rel="stylesheet">
@@ -37,7 +37,11 @@
       <a href="#charitas" class="nav-tab" role="tab" data-view="charitas">Charitas</a>
       <a href="#chapters" class="nav-tab" role="tab" data-view="chapters">Chapters</a>
       <a href="#angas" class="nav-tab" role="tab" data-view="angas">Angas</a>
+      <a href="#hymns" class="nav-tab" role="tab" data-view="hymns">Hymns</a>
+      <a href="#navadurga" class="nav-tab" role="tab" data-view="navadurga">Navadurga</a>
       <a href="#paath" class="nav-tab" role="tab" data-view="paath">Paath</a>
+      <a href="#chant" class="nav-tab" role="tab" data-view="chant">Chant</a>
+      <a href="#search" class="nav-tab" role="tab" data-view="search">Search</a>
       <a href="#about" class="nav-tab" role="tab" data-view="about">About</a>
     </nav>
   </header>
@@ -60,8 +64,16 @@
           <span class="stat-label">Mantras</span>
         </div>
         <div class="stat-card">
-          <span class="stat-number">3</span>
-          <span class="stat-label">Charitas</span>
+          <span class="stat-number">12</span>
+          <span class="stat-label">Angas</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">9</span>
+          <span class="stat-label">Forms (Navadurga)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">7</span>
+          <span class="stat-label">Saptamatrika</span>
         </div>
         <div class="stat-card">
           <span class="stat-number" id="stat-completed">0</span>
@@ -145,7 +157,10 @@
       <div class="quick-actions">
         <a href="#charitas" class="action-btn">Explore Charitas</a>
         <a href="#chapters" class="action-btn">Read Chapters</a>
+        <a href="#hymns" class="action-btn">Great Hymns</a>
+        <a href="#navadurga" class="action-btn">Nine Forms</a>
         <a href="#paath" class="action-btn">Full Paath</a>
+        <a href="#chant" class="action-btn">Chant Mode</a>
       </div>
     </section>
 
@@ -162,7 +177,7 @@
     <section id="view-chapters" class="view" hidden>
       <div class="section-intro">
         <h2>The 13 Chapters</h2>
-        <p>The full text in order. Each chapter has its full Devanagari text, IAST transliteration, summary of the narrative, presiding deity, and key hymns. Click any chapter to expand.</p>
+        <p>The full text in order. Each chapter has its full Devanagari text, IAST transliteration, summary of the narrative, presiding deity, key hymns, and Phala (the fruit of reciting that chapter). Click any chapter to expand.</p>
       </div>
       <div class="chapters-stats">
         <div id="chapters-counter">13 chapters</div>
@@ -174,28 +189,82 @@
     <!-- Angas View -->
     <section id="view-angas" class="view" hidden>
       <div class="section-intro">
-        <h2>The Angas - Auxiliary Texts</h2>
-        <p>Traditional paath includes auxiliary texts before and after the 13 chapters. The Trayanga method (Argala + Keelaka + Kavacha) is the minimum; the full Navangam adds Saptashloki, Dhyana, Navarna mantra, Devi Suktam, Kunjika, and Aparadha Kshamapana.</p>
+        <h2>The Angas - 12 Auxiliary Texts</h2>
+        <p>Traditional paath includes auxiliary texts before and after the 13 chapters. Pre-paath includes Saptashloki, Devi Atharvashirsha, Chandika Dhyana, and the Trayanga (Argala + Keelaka + Kavacha). Post-paath includes the 3 Rahasyas (Pradhanika, Vaikritika, Murti), Devi Suktam, Siddha Kunjika, and Aparadha Kshamapana.</p>
       </div>
       <div class="anga-phases">
-        <h3 class="phase-heading">Pre-Paath (Purvanga)</h3>
+        <h3 class="phase-heading">Pre-Paath (Purvanga) - 6 Angas</h3>
         <div class="angas-list" id="angas-pre-list"></div>
-        <h3 class="phase-heading">Post-Paath (Uttaranga)</h3>
+        <h3 class="phase-heading">Post-Paath (Uttaranga) - 6 Angas</h3>
         <div class="angas-list" id="angas-post-list"></div>
       </div>
+    </section>
+
+    <!-- Hymns View -->
+    <section id="view-hymns" class="view" hidden>
+      <div class="section-intro">
+        <h2>The Great Hymns</h2>
+        <p>Five supreme hymns extracted from the Saptashati. These are the most chanted standalone verses - especially Ya Devi Sarva Bhuteshu, the most beloved Shakta hymn. Each carries the essence of an entire phase of the text.</p>
+      </div>
+      <div class="hymns-list" id="hymns-list"></div>
+    </section>
+
+    <!-- Navadurga View -->
+    <section id="view-navadurga" class="view" hidden>
+      <div class="section-intro">
+        <h2>Navadurga - The Nine Forms</h2>
+        <p>The nine forms of Durga - one for each night of Navratri. Each form has her own iconography, mantra, dhyana verse, vahana, weapons, and boon. These are the nine forms named in the Devi Kavacham. Click any form to expand.</p>
+      </div>
+      <div class="navadurga-grid" id="navadurga-grid"></div>
     </section>
 
     <!-- Paath View -->
     <section id="view-paath" class="view" hidden>
       <div class="section-intro">
         <h2>Full Paath - Traditional Order</h2>
-        <p>The complete Navangam paath in canonical order. Mark each component as recited as you progress. The full paath takes approximately 3-4 hours when recited at a steady pace; for daily practice, many devotees split the chapters across days while always reciting the Trayanga and Devi Suktam.</p>
+        <p>The complete Navangam paath in canonical order - 26 components. Mark each as recited as you progress. The full paath takes approximately 4-6 hours when recited at a steady pace; for daily practice, many devotees follow the Kerala Nitya Chandi 7-day sequence.</p>
       </div>
       <div class="paath-stats">
         <div class="progress-pill" id="paath-progress">0 / 0 complete</div>
         <button class="data-btn" id="paath-reset">Reset Progress</button>
       </div>
       <div class="paath-list" id="paath-list"></div>
+    </section>
+
+    <!-- Chant Mode View -->
+    <section id="view-chant" class="view" hidden>
+      <div class="chant-controls">
+        <button class="chant-btn" id="chant-fullscreen">Full Screen</button>
+        <div class="chant-position-info" id="chant-position-info">Position 1 of 26</div>
+        <button class="chant-btn" id="chant-toggle-script">Show IAST</button>
+      </div>
+
+      <div class="chant-stage" id="chant-stage">
+        <div class="chant-position-label" id="chant-position-label">Saptashloki Durga</div>
+        <div class="chant-text-area" id="chant-text-area">
+          <div class="chant-text-deva" id="chant-text-deva"></div>
+          <div class="chant-text-iast" id="chant-text-iast" hidden></div>
+        </div>
+      </div>
+
+      <div class="chant-nav">
+        <button class="chant-nav-btn" id="chant-prev">← Prev</button>
+        <select id="chant-jump-select" class="chant-jump-select" aria-label="Jump to component"></select>
+        <button class="chant-nav-btn" id="chant-next">Next →</button>
+      </div>
+    </section>
+
+    <!-- Search View -->
+    <section id="view-search" class="view" hidden>
+      <div class="section-intro">
+        <h2>Search</h2>
+        <p>Search across all chapters, angas, hymns, and Navadurga. Searches both Devanagari (paste in देवनागरी) and IAST (with or without diacritics).</p>
+      </div>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search... try 'mahakali', 'या देवी', 'narayani', 'chamunda'">
+        <div class="search-counter" id="search-counter"></div>
+      </div>
+      <div class="search-results" id="search-results"></div>
     </section>
 
     <!-- About View -->
@@ -277,21 +346,30 @@
       </div>
 
       <div class="about-section">
-        <h2>Traditional Paath Order</h2>
-        <ol class="practice-flow-list">
-          <li><strong>Sankalpa</strong><span>Statement of intent - date, place, purpose, deity, fruit</span></li>
-          <li><strong>Saptashloki Durga</strong><span>Seven verses condensing the entire text</span></li>
-          <li><strong>Chandika Dhyana</strong><span>Meditation verse on Devi Chandika</span></li>
-          <li><strong>Navarna Mantra</strong><span>108 recitations of the nine-syllable mantra</span></li>
-          <li><strong>Trayanga</strong><span>Argala, Keelaka, Kavacha</span></li>
-          <li><strong>Ratri Suktam</strong><span>Vedic hymn to the Night-goddess (Rig Veda)</span></li>
-          <li><strong>13 Chapters</strong><span>The main Saptashati - 700 mantras</span></li>
-          <li><strong>Devi Suktam</strong><span>The Vagambhrini Suktam (Rig Veda 10.125)</span></li>
-          <li><strong>Siddha Kunjika</strong><span>The master-key stotram</span></li>
-          <li><strong>Aparadha Kshamapana</strong><span>Forgiveness for any errors</span></li>
-          <li><strong>Pushpanjali</strong><span>Offering of flowers, conclusion</span></li>
-        </ol>
-        <div class="practice-flow-note">For daily practice, many devotees split the chapters across days. The most important rule: never interrupt the Madhyama Charita (chapters 2-4) mid-recitation.</div>
+        <h2>Beginner's Path</h2>
+        <p>Guidance for those new to the Saptashati - a gradual, sustainable way to build the practice:</p>
+        <div class="stages-grid" id="stages-grid"></div>
+      </div>
+
+      <div class="about-section">
+        <h2>Navratri - The Nine Nights</h2>
+        <div id="navratri-content"></div>
+      </div>
+
+      <div class="about-section">
+        <h2>Kerala Nitya Chandi - 7-Day Sequence</h2>
+        <div id="nitya-chandi"></div>
+      </div>
+
+      <div class="about-section">
+        <h2>The Saptamatrika - 7 Mothers</h2>
+        <p>In Chapter 8, when Raktabija enters the battle, the Saptamatrika emerge from the gods' energies to assist Devi. Each is the shakti of a major god - drawing his weapon, vahana, and cosmic role into a feminine form. Together they represent Devi's organising principle: every divine power has its shakti.</p>
+        <div class="saptamatrika-grid" id="saptamatrika-grid"></div>
+      </div>
+
+      <div class="about-section">
+        <h2>The 18 Weapons of Mahishasura Mardini</h2>
+        <div id="weapons-content"></div>
       </div>
 
       <div class="about-section">
@@ -304,29 +382,8 @@
       </div>
 
       <div class="about-section">
-        <h2>The Four Great Hymns</h2>
-        <div class="hymns-grid">
-          <div class="hymn-card">
-            <div class="hymn-name">Brahma-Stuti</div>
-            <div class="hymn-location">Chapter 1</div>
-            <div class="hymn-desc">Brahma's praise of Yoganidra (Mahamaya) - the very first hymn to Devi as the supreme cause.</div>
-          </div>
-          <div class="hymn-card">
-            <div class="hymn-name">Shakradi-Stuti</div>
-            <div class="hymn-location">Chapter 4</div>
-            <div class="hymn-desc">Indra and the gods praise Devi after the slaying of Mahishasura - "Devi who is the cause of all causes".</div>
-          </div>
-          <div class="hymn-card">
-            <div class="hymn-name">Ya Devi Sarva Bhuteshu</div>
-            <div class="hymn-location">Chapter 5</div>
-            <div class="hymn-desc">"To the Devi who dwells in all beings as consciousness, intelligence, sleep, hunger..." - the most chanted hymn from the Saptashati.</div>
-          </div>
-          <div class="hymn-card">
-            <div class="hymn-name">Narayani Stuti</div>
-            <div class="hymn-location">Chapter 11</div>
-            <div class="hymn-desc">The grandest hymn - Devi as Narayani, refuge of all, cause of creation-preservation-destruction.</div>
-          </div>
-        </div>
+        <h2>Chandi Homa</h2>
+        <div id="homa-content"></div>
       </div>
 
       <div class="about-section">
@@ -360,10 +417,12 @@
         <h2>Credits & Sources</h2>
         <div class="credits-card">
           <p><strong>Sanskrit text:</strong> <a href="https://sanskritdocuments.org/doc_devii/durga700.html" target="_blank" rel="noopener">Sanskrit Documents (Durga 700)</a> - transliterated by K. Shankaran, Kirk Wortman, Dhruba Chakroborty, Ahto Jarve; proofread by Sunder Hattangadi and Kirk Wortman.</p>
+          <p><strong>Devi Atharvashirsha:</strong> <a href="https://sanskritdocuments.org/doc_devii/deviiatharva.html" target="_blank" rel="noopener">Sanskrit Documents</a> - proofread by Ravin Bhalekar and PSA Easwaran.</p>
+          <p><strong>3 Rahasyas (Pradhanika, Vaikritika, Murti):</strong> <a href="https://www.drikpanchang.com/lyrics/durga-saptashati/durga-saptashati.html" target="_blank" rel="noopener">Drik Panchang</a>.</p>
           <p><strong>Siddha Kunjika:</strong> <a href="https://sanskritdocuments.org/doc_devii/siddhakunjikaa.html" target="_blank" rel="noopener">Sanskrit Documents</a> - source: Rudrayamala Tantra / Damaratantra.</p>
           <p><strong>Audio:</strong> <a href="https://www.youtube.com/@VaidicDharmaSansthanOmSwami" target="_blank" rel="noopener">Vaidic Dharma Sansthan, Bangalore Ashram</a> - regular Durga Saptashati Parayanam events.</p>
           <p><strong>Cross-verification:</strong> Gita Press Gorakhpur edition, Vaidika Vignanam.</p>
-          <p>All Devanagari and IAST were generated programmatically from the Sanskrit Documents ITRANS source via the indic-transliteration library. Any error is mine; any grace is the Mother's.</p>
+          <p>All Devanagari and IAST were generated programmatically via the indic-transliteration library. Any error is mine; any grace is the Mother's.</p>
         </div>
       </div>
     </section>
@@ -383,8 +442,8 @@
     <p class="footer-repo"><a href="https://github.com/TheHardikDewra/durga-saptashati" target="_blank" rel="noopener">GitHub</a></p>
   </footer>
 
-  <script src="data.js?v=1"></script>
-  <script src="app.js?v=1"></script>
+  <script src="data.js?v=2"></script>
+  <script src="app.js?v=2"></script>
   <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
